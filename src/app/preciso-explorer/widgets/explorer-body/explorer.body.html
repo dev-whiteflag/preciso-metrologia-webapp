@@ -1,0 +1,54 @@
+<section>
+    <mat-card>
+        <mat-card-title>Certificados</mat-card-title>
+        <mat-card-content id="table-container">
+            <mat-form-field id="filterfield" appearance="outline">
+                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Pesquisar">
+            </mat-form-field>
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+                <ng-container matColumnDef="Select">
+                    <th mat-header-cell *matHeaderCellDef>
+                        <mat-checkbox color="primary" (change)="$event ? masterToggle() : null" [checked]="selection.hasValue() && isAllSelected()"
+                            [indeterminate]="selection.hasValue() && !isAllSelected()">
+                        </mat-checkbox>
+                    </th>
+                    <td mat-cell *matCellDef="let row">
+                        <mat-checkbox color="primary" (click)="$event.stopPropagation()" (change)="$event ? selection.toggle(row) : null"
+                            [checked]="selection.isSelected(row)">
+                        </mat-checkbox>
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="Empresa">
+                    <th mat-header-cell *matHeaderCellDef> Empresa </th>
+                    <td mat-cell *matCellDef="let element"> {{element.Empresa}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="Tipo de Instrumento">
+                    <th mat-header-cell *matHeaderCellDef> Tipo de Instrumento </th>
+                    <td mat-cell *matCellDef="let element"> {{element["Tipo de Instrumento"]}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="Instrumento">
+                    <th mat-header-cell *matHeaderCellDef> Instrumento </th>
+                    <td mat-cell *matCellDef="let element"> {{element.Instrumento}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="Marca do Instrumento">
+                    <th mat-header-cell *matHeaderCellDef> Marca do Instrumento</th>
+                    <td mat-cell *matCellDef="let element"> {{element["Marca do Instrumento"]}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="Modelo do Instrumento">
+                    <th mat-header-cell *matHeaderCellDef> Modelo do Instrumento</th>
+                    <td mat-cell *matCellDef="let element"> {{element["Modelo do Instrumento"]}} </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky:true"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+        </mat-card-content>
+        <button id="imprimir-button" mat-stroked-button color="primary" (click)="exportData()">
+            Imprimir Certificado(s)</button>
+    </mat-card>
+</section>

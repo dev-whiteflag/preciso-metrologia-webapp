@@ -25,6 +25,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { AngularFirestore } from 'angularfire2/firestore';
 import { AngularFireModule } from 'angularfire2';
 import { environment } from '../../environments/environment';
+import { ContaPrecisoComponent } from './widgets/explorer-home/states/conta-preciso/conta-preciso.component';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -40,6 +42,7 @@ const routes: Routes = [
     FooterComponent,
     ExplorerHomeComponent,
     CertificadosComponent,
+    ContaPrecisoComponent,
   ],
   imports: [
     BrowserModule,
@@ -58,6 +61,7 @@ const routes: Routes = [
     MatCheckboxModule,
     MatTableModule,
     AngularFireModule.initializeApp(environment.firebase),
+    MatExpansionModule,
   ],
   exports: [],
   providers: [AuthService, AngularFireAuth, RouterModule, AngularFirestore],

@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './explorer.main';
-import { ExplorerHeaderModule } from './widgets/explorer-header/explorer.header.module';
 import { UserFormComponent } from './widgets/explorer-login/users/login-form/login-form.component'
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -43,7 +42,6 @@ const routes: Routes = [
     CertificadosComponent,
   ],
   imports: [
-    ExplorerHeaderModule,
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,

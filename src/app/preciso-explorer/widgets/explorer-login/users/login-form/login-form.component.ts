@@ -24,7 +24,7 @@ export class UserFormComponent implements OnInit {
    }
 
    login(): void {
-     this.auth.emailLogin(this.userForm.value.email, this.userForm.value.password)
+     this.auth.emailLogin(this.userForm.value.email, this.userForm.value.password);
    }
 
    resetPassword() {

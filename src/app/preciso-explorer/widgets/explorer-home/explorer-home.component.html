@@ -1,9 +1,16 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <app-header></app-header>
 <section>
     <mat-card id="preciso-page-wrapper">
         <mat-tab-group id="preciso-page-groud">
             <mat-tab label="Gerenciador de Certificados">
                 <app-certificados></app-certificados>
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    <mat-icon id="preciso-navbar-acc">account_box</mat-icon>
+                </ng-template>
             </mat-tab>
         </mat-tab-group>
     </mat-card>

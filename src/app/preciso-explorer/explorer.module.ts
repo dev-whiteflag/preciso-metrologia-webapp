@@ -15,9 +15,18 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { HeaderComponent } from './widgets/explorer-home/header/header.component';
+import { BodyComponent } from './widgets/explorer-home/body/body.component';
+import { FooterComponent } from './widgets/explorer-home/footer/footer.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { ExplorerHomeComponent } from './widgets/explorer-home/explorer-home.component';
+import { MatIconModule } from '@angular/material/icon';
+
+
 
 const routes: Routes = [
-  { path: 'home', component: ExplorerBodyModule },
+  { path: '', redirectTo: 'login', pathMatch: 'full'},
+  { path: 'home', component: ExplorerHomeComponent },
   { path: 'login', component: UserFormComponent },
 ];
 
@@ -25,6 +34,10 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     UserFormComponent,
+    HeaderComponent,
+    BodyComponent,
+    FooterComponent,
+    ExplorerHomeComponent,
   ],
   imports: [
     ExplorerHeaderModule,
@@ -38,6 +51,8 @@ const routes: Routes = [
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
+    MatToolbarModule,
+    MatIconModule,
   ],
   exports: [],  
   providers: [AuthService, AngularFireAuth, RouterModule],

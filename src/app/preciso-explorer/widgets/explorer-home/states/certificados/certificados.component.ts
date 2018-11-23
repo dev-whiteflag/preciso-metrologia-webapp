@@ -158,12 +158,12 @@ interface Certificado {
 }
 
 @Component({
-  selector: 'explorer-body',
-  templateUrl: './explorer.body.html',
-  styleUrls: ['./explorer.body.css']
+  selector: 'app-certificados',
+  templateUrl: './certificados.component.html',
+  styleUrls: ['./certificados.component.css']
 })
 
-export class ExplorerBodyComponent implements OnInit {
+export class CertificadosComponent implements OnInit {
 
   certCollection: AngularFirestoreCollection<Certificado>;
   cert: Observable<Certificado[]>;

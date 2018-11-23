@@ -31,7 +31,7 @@ export class AuthService {
     this.user = this.afAuth.authState.pipe(
       switchMap(user => {
         if (user) {
-          return this.afs.doc<User>(`users/${user.uid}`).valueChanges();
+          return this.afs.doc<User>(`preciso-funcionarios/${user.uid}`).valueChanges();
         } else {
           return of(null);
         }
@@ -68,6 +68,15 @@ export class AuthService {
     });
   }
 
+  returnUsername(user: User){
+    const data: User = {
+      uid: user.uid,
+      email: user.email || null,
+      displayName: user.displayName || 'nameless user',
+    };
+    return data.displayName;
+  }
+
   // If error, console log and notify user
   private handleError(error: Error) {
     console.error(error);
@@ -76,7 +85,7 @@ export class AuthService {
   // Sets user data to firestore after succesful login
   private updateUserData(user: User) {
     const userRef: AngularFirestoreDocument<User> = this.afs.doc(
-      `users/${user.uid}`
+      `preciso-funcionarios/${user.uid}`
     );
 
     const data: User = {

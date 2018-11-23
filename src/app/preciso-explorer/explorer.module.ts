@@ -4,7 +4,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './explorer.main';
 import { ExplorerHeaderModule } from './widgets/explorer-header/explorer.header.module';
-import { ExplorerBodyModule } from './widgets/explorer-body/explorer.body.module';
 import { UserFormComponent } from './widgets/explorer-login/users/login-form/login-form.component'
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -16,18 +15,22 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { HeaderComponent } from './widgets/explorer-home/header/header.component';
-import { BodyComponent } from './widgets/explorer-home/body/body.component';
 import { FooterComponent } from './widgets/explorer-home/footer/footer.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { ExplorerHomeComponent } from './widgets/explorer-home/explorer-home.component';
 import { MatIconModule } from '@angular/material/icon';
-
-
+import { CertificadosComponent } from './widgets/explorer-home/states/certificados/certificados.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatTableModule } from '@angular/material/table';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { AngularFirestore } from 'angularfire2/firestore';
+import { AngularFireModule } from 'angularfire2';
+import { environment } from '../../environments/environment';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full'},
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'home', component: ExplorerHomeComponent },
-  { path: 'login', component: UserFormComponent },
+  { path: 'login', component: UserFormComponent, },
 ];
 
 @NgModule({
@@ -35,13 +38,12 @@ const routes: Routes = [
     AppComponent,
     UserFormComponent,
     HeaderComponent,
-    BodyComponent,
     FooterComponent,
     ExplorerHomeComponent,
+    CertificadosComponent,
   ],
   imports: [
     ExplorerHeaderModule,
-    ExplorerBodyModule,
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
@@ -53,9 +55,14 @@ const routes: Routes = [
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
+    MatTabsModule,
+    MatFormFieldModule,
+    MatCheckboxModule,
+    MatTableModule,
+    AngularFireModule.initializeApp(environment.firebase),
   ],
-  exports: [],  
-  providers: [AuthService, AngularFireAuth, RouterModule],
+  exports: [],
+  providers: [AuthService, AngularFireAuth, RouterModule, AngularFirestore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

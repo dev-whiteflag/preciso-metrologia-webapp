@@ -1,0 +1,36 @@
+<mat-card id="preciso-login-card">
+  <form [formGroup]="userForm" *ngIf="newUser" (ngSubmit)="login()">
+
+    <mat-card-header>
+      <div id="preciso-header-logo">
+        <img mat-card-image src="https://static.wixstatic.com/media/b8f353_a43434b395434214a74eb6e297b24dd5~mv2_d_1763_1764_s_2.png"
+          alt="Preciso Metrologia Logo">
+      </div>
+    </mat-card-header>
+
+    <div>
+      <h1 id="preciso-login-header-title">Conecte-se</h1>
+    </div>
+
+    <div>
+      <h4 id="preciso-login-header-subtitle">usando sua Conta Preciso</h4>
+    </div>
+
+    <mat-card-content>
+      <mat-form-field appearance="outline" id="preciso-login-email">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email" required>
+        <mat-hint *ngIf="formErrors.email">{{ formErrors.email }}</mat-hint>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" id="preciso-login-password">
+        <mat-label>Senha</mat-label>
+        <input matInput type="password" formControlName="password" required>
+        <mat-hint *ngIf="formErrors.password">{{ formErrors.password }}</mat-hint>
+      </mat-form-field>
+
+      <button mat-stroked-button type="submit" [disabled]="!userForm.valid" id="preciso-login-button">Login</button>
+    </mat-card-content>
+
+  </form>
+</mat-card>

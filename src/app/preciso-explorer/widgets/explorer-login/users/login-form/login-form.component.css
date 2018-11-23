@@ -1,0 +1,34 @@
+#preciso-header-logo{
+    width: 100px;
+    height: 100px;
+    margin: 2% auto;
+}
+
+#preciso-login-header-title{
+    font-weight: 300;
+    margin: 5% 0% 0% 38%;
+}
+
+#preciso-login-header-subtitle{
+    font-weight: 300;
+    margin: 1% 0% 3% 32%;
+}
+
+#preciso-login-card{
+    margin: 8% 30% 15% 30%;
+}
+
+#preciso-login-email{
+    width: 90%;
+    margin: 0% 0% 0% 5%;
+}
+
+#preciso-login-password{
+    width: 90%;
+    margin: 1% 0% 0% 5%;
+}
+
+#preciso-login-button{
+    width: 20%;
+    margin: 2% 0% 0% 40%;
+}

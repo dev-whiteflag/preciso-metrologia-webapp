@@ -1,7 +1,7 @@
 <section id="preciso-conta-info">
   <h1 id="preciso-conta-info-title">Conta Preciso</h1>
   <mat-accordion class="example-headers-align">
-    <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+    <mat-expansion-panel>
 
       <mat-expansion-panel-header>
         <mat-panel-title>
@@ -11,7 +11,7 @@
       <!-- Preencher -->
     </mat-expansion-panel>
 
-    <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+    <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
           Dados Pessoais
@@ -20,7 +20,7 @@
       <!-- Preencher -->
     </mat-expansion-panel>
 
-    <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+    <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
           Certificados Emitidos Recentemente
@@ -28,6 +28,5 @@
       </mat-expansion-panel-header>
       <!-- Preencher -->
     </mat-expansion-panel>
-
   </mat-accordion>
 </section>

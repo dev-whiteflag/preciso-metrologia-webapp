@@ -13,9 +13,7 @@ interface Certificado {
   Ano: string;
   'Mês': string;
   Incremental: string;
-
-  isUsingRawData2: string;
-  isUsingRawData3: string;
+  'Hora do Envio':string;
 
   Empresa: string;
   'Endereço': string;
@@ -54,97 +52,89 @@ interface Certificado {
   'Umidade Relativa - Final de Escala': string;
   'Umidade Relativa - Valor de uma Divisão': string;
 
+          // ------------------------------ MEDIDOR PRESSÃO ---------------------------- //
   'Inicio de Escala': string;
   'Final de Escala': string;
   'Volume Nominal': string;
   'Pressão Atmosférica': string;
 
-  'V.C.C 1 - Primeira Leitura': string;
-  'V.C.C 1 - Incerteza - Primeira Leitura': string;
-  'V.C.C 2 - Primeira Leitura': string;
-  'V.C.C 2 - Incerteza - Primeira Leitura': string;
-  'V.C.C 3 - Primeira Leitura': string;
-  'V.C.C 3 - Incerteza - Primeira Leitura': string;
-  'V.C.C 4 - Primeira Leitura': string;
-  'V.C.C 4 - Incerteza - Primeira Leitura': string;
-  'V.C.C 5 - Primeira Leitura': string;
-  'V.C.C 5 - Incerteza - Primeira Leitura': string;
+  'V.I.I 1 - Leitura 1':string;
+  'V.I.I 2 - Leitura 1':string;
+  'V.I.I 3 - Leitura 1':string;
+  'V.I.I 4 - Leitura 1':string;
+  'V.I.I 5 - Leitura 1':string;
+  'V.I.I 6 - Leitura 1':string;
+  'V.I.I 7 - Leitura 1':string;
+  'V.I.I 8 - Leitura 1':string;
+  'V.I.I 9 - Leitura 1':string;
+  'V.I.I 10 - Leitura 1':string;
 
-  'V.I.I 1.1 - Primeira Leitura': string;
-  'V.I.I 1.2 - Primeira Leitura': string;
-  'V.I.I 1.3 - Primeira Leitura': string;
-  'V.I.I 1.4 - Primeira Leitura': string;
-  'V.I.I 1.5 - Primeira Leitura': string;
+  'V.V.C 1 - Leitura 1 - Linha 1': string;
+  'V.V.C 1 - Leitura 1 - Linha 2': string;
+  'V.V.C 1 - Leitura 1 - Linha 3': string;
+  'V.V.C 1 - Leitura 1 - Linha 4': string;
+  'V.V.C 1 - Leitura 1 - Linha 5': string;
+  'V.V.C 1 - Leitura 1 - Linha 6': string;
+  'V.V.C 1 - Leitura 1 - Linha 7': string;
+  'V.V.C 1 - Leitura 1 - Linha 8': string;
+  'V.V.C 1 - Leitura 1 - Linha 9': string;
+  'V.V.C 1 - Leitura 1 - Linha 10': string;
 
-  'V.I.I 2.1 - Primeira Leitura': string;
-  'V.I.I 2.2 - Primeira Leitura': string;
-  'V.I.I 2.3 - Primeira Leitura': string;
-  'V.I.I 2.4 - Primeira Leitura': string;
-  'V.I.I 2.5 - Primeira Leitura': string;
+  'V.V.C 1 - Leitura 2 - Linha 1': string;
+  'V.V.C 1 - Leitura 2 - Linha 2': string;
+  'V.V.C 1 - Leitura 2 - Linha 3': string;
+  'V.V.C 1 - Leitura 2 - Linha 4': string;
+  'V.V.C 1 - Leitura 2 - Linha 5': string;
+  'V.V.C 1 - Leitura 2 - Linha 6': string;
+  'V.V.C 1 - Leitura 2 - Linha 7': string;
+  'V.V.C 1 - Leitura 2 - Linha 8': string;
+  'V.V.C 1 - Leitura 2 - Linha 9': string;
+  'V.V.C 1 - Leitura 2 - Linha 10': string;
 
-  'V.I.I 3.1 - Primeira Leitura': string;
-  'V.I.I 3.2 - Primeira Leitura': string;
-  'V.I.I 3.3 - Primeira Leitura': string;
-  'V.I.I 3.4 - Primeira Leitura': string;
-  'V.I.I 3.5 - Primeira Leitura': string;
+  'V.V.C 2 - Leitura 1 - Linha 1': string;
+  'V.V.C 2 - Leitura 1 - Linha 2': string;
+  'V.V.C 2 - Leitura 1 - Linha 3': string;
+  'V.V.C 2 - Leitura 1 - Linha 4': string;
+  'V.V.C 2 - Leitura 1 - Linha 5': string;
+  'V.V.C 2 - Leitura 1 - Linha 6': string;
+  'V.V.C 2 - Leitura 1 - Linha 7': string;
+  'V.V.C 2 - Leitura 1 - Linha 8': string;
+  'V.V.C 2 - Leitura 1 - Linha 9': string;
+  'V.V.C 2 - Leitura 1 - Linha 10': string;
 
-  'V.C.C 1 - Segunda Leitura': string;
-  'V.C.C 1 - Incerteza - Segunda Leitura': string;
-  'V.C.C 2 - Segunda Leitura': string;
-  'V.C.C 2 - Incerteza - Segunda Leitura': string;
-  'V.C.C 3 - Segunda Leitura': string;
-  'V.C.C 3 - Incerteza - Segunda Leitura': string;
-  'V.C.C 4 - Segunda Leitura': string;
-  'V.C.C 4 - Incerteza - Segunda Leitura': string;
-  'V.C.C 5 - Segunda Leitura': string;
-  'V.C.C 5 - Incerteza - Segunda Leitura': string;
+  'V.V.C 2 - Leitura 2 - Linha 1': string;
+  'V.V.C 2 - Leitura 2 - Linha 2': string;
+  'V.V.C 2 - Leitura 2 - Linha 3': string;
+  'V.V.C 2 - Leitura 2 - Linha 4': string;
+  'V.V.C 2 - Leitura 2 - Linha 5': string;
+  'V.V.C 2 - Leitura 2 - Linha 6': string;
+  'V.V.C 2 - Leitura 2 - Linha 7': string;
+  'V.V.C 2 - Leitura 2 - Linha 8': string;
+  'V.V.C 2 - Leitura 2 - Linha 9': string;
+  'V.V.C 2 - Leitura 2 - Linha 10': string;
 
-  'V.I.I 1.1 - Segunda Leitura': string;
-  'V.I.I 1.2 - Segunda Leitura': string;
-  'V.I.I 1.3 - Segunda Leitura': string;
-  'V.I.I 1.4 - Segunda Leitura': string;
-  'V.I.I 1.5 - Segunda Leitura': string;
+  'V.V.C 3 - Leitura 1 - Linha 1': string;
+  'V.V.C 3 - Leitura 1 - Linha 2': string;
+  'V.V.C 3 - Leitura 1 - Linha 3': string;
+  'V.V.C 3 - Leitura 1 - Linha 4': string;
+  'V.V.C 3 - Leitura 1 - Linha 5': string;
+  'V.V.C 3 - Leitura 1 - Linha 6': string;
+  'V.V.C 3 - Leitura 1 - Linha 7': string;
+  'V.V.C 3 - Leitura 1 - Linha 8': string;
+  'V.V.C 3 - Leitura 1 - Linha 9': string;
+  'V.V.C 3 - Leitura 1 - Linha 10': string;
 
-  'V.I.I 2.1 - Segunda Leitura': string;
-  'V.I.I 2.2 - Segunda Leitura': string;
-  'V.I.I 2.3 - Segunda Leitura': string;
-  'V.I.I 2.4 - Segunda Leitura': string;
-  'V.I.I 2.5 - Segunda Leitura': string;
-
-  'V.I.I 3.1 - Segunda Leitura': string;
-  'V.I.I 3.2 - Segunda Leitura': string;
-  'V.I.I 3.3 - Segunda Leitura': string;
-  'V.I.I 3.4 - Segunda Leitura': string;
-  'V.I.I 3.5 - Segunda Leitura': string;
-
-  'V.C.C 1 - Terceira Leitura': string;
-  'V.C.C 1 - Incerteza - Terceira Leitura': string;
-  'V.C.C 2 - Terceira Leitura': string;
-  'V.C.C 2 - Incerteza - Terceira Leitura': string;
-  'V.C.C 3 - Terceira Leitura': string;
-  'V.C.C 3 - Incerteza - Terceira Leitura': string;
-  'V.C.C 4 - Terceira Leitura': string;
-  'V.C.C 4 - Incerteza - Terceira Leitura': string;
-  'V.C.C 5 - Terceira Leitura': string;
-  'V.C.C 5 - Incerteza - Terceira Leitura': string;
-
-  'V.I.I 1.1 - Terceira Leitura': string;
-  'V.I.I 1.2 - Terceira Leitura': string;
-  'V.I.I 1.3 - Terceira Leitura': string;
-  'V.I.I 1.4 - Terceira Leitura': string;
-  'V.I.I 1.5 - Terceira Leitura': string;
-
-  'V.I.I 2.1 - Terceira Leitura': string;
-  'V.I.I 2.2 - Terceira Leitura': string;
-  'V.I.I 2.3 - Terceira Leitura': string;
-  'V.I.I 2.4 - Terceira Leitura': string;
-  'V.I.I 2.5 - Terceira Leitura': string;
-
-  'V.I.I 3.1 - Terceira Leitura': string;
-  'V.I.I 3.2 - Terceira Leitura': string;
-  'V.I.I 3.3 - Terceira Leitura': string;
-  'V.I.I 3.4 - Terceira Leitura': string;
-  'V.I.I 3.5 - Terceira Leitura': string;
+  'V.V.C 3 - Leitura 2 - Linha 1': string;
+  'V.V.C 3 - Leitura 2 - Linha 2': string;
+  'V.V.C 3 - Leitura 2 - Linha 3': string;
+  'V.V.C 3 - Leitura 2 - Linha 4': string;
+  'V.V.C 3 - Leitura 2 - Linha 5': string;
+  'V.V.C 3 - Leitura 2 - Linha 6': string;
+  'V.V.C 3 - Leitura 2 - Linha 7': string;
+  'V.V.C 3 - Leitura 2 - Linha 8': string;
+  'V.V.C 3 - Leitura 2 - Linha 9': string;
+  'V.V.C 3 - Leitura 2 - Linha 10': string;
+          // ------------------------------ END: MEDIDOR PRESSÃO ---------------------------- //
 
   'Padrão 1': string;
   'Padrão 2': string;
@@ -198,13 +188,13 @@ export class CertificadosComponent implements OnInit {
   }
 
 
-  exportData(selectedData: any) {
+  exportData() {
     var selectedCert = this.selection.selected;
     var filepath = "";
     var xmlhttp = new XMLHttpRequest();
    
     switch (selectedCert.map((data => data["Tipo de Instrumento"])).toString()) {
-        case "Medidor de Pressão":
+        case "Medidor de Pressão - 5 Leituras":
           filepath = "../src/app/preciso-explorer/templates/preciso-medidor-pressao.xlsx";
           break;
         case "Termohigrometro":
@@ -212,6 +202,9 @@ export class CertificadosComponent implements OnInit {
           break;
         case "Vidraria Graduada":
           filepath = "../src/app/preciso-explorer/templates/preciso-vidraria-graduada.xlsx";
+          break;
+        case "Medidor de Pressão - 10 Leituras":
+          filepath = "../src/app/preciso-explorer/templates/preciso-medidor-pressao10.xlsx";
           break;
       }
 
@@ -229,9 +222,8 @@ export class CertificadosComponent implements OnInit {
               console.log("dataAsync ok");
               if (selectedCert != null) {
                 var id = (selectedCert.map(data => data["ID"]).toString());
-
                 switch (selectedCert.map((data => data["Tipo de Instrumento"])).toString()) {
-                  case "Medidor de Pressão":
+                  /* case "Medidor de Pressão - 5 Leituras":
                     workbook.sheet(0).cell('AV3').value((selectedCert.map(data => data.Ano)).toString());
                     workbook.sheet(0).cell('AW3').value((selectedCert.map(data => data.Mês)).toString());
                     workbook.sheet(0).cell('AX3').value((selectedCert.map(data => data.PrecisoID)).toString());
@@ -258,11 +250,11 @@ export class CertificadosComponent implements OnInit {
                     workbook.sheet(0).cell('AY17').value((selectedCert.map(data => data.Grandeza)).toString());
                     workbook.sheet(0).cell('AV18').value(parseFloat(selectedCert.map(data => (data["Valor de uma Divisão"])).toString()));
 
-                    workbook.sheet(0).cell('AT23').value(parseFloat(selectedCert.map(data => (data["V.C.C 1 - Primeira Leitura"])).toString()));
-                    workbook.sheet(0).cell('AT24').value(parseFloat(selectedCert.map(data => (data["V.C.C 2 - Primeira Leitura"])).toString()));
-                    workbook.sheet(0).cell('AT25').value(parseFloat(selectedCert.map(data => (data["V.C.C 3 - Primeira Leitura"])).toString()));
-                    workbook.sheet(0).cell('AT26').value(parseFloat(selectedCert.map(data => (data["V.C.C 4 - Primeira Leitura"])).toString()));
-                    workbook.sheet(0).cell('AT27').value(parseFloat(selectedCert.map(data => (data["V.C.C 5 - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AT23').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AT24').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AT25').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AT26').value(parseFloat(selectedCert.map(data => (data["V.V.C 4 - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AT27').value(parseFloat(selectedCert.map(data => (data["V.V.C 5 - Primeira Leitura"])).toString()));
 
                     workbook.sheet(0).cell('AU23').value(parseFloat(selectedCert.map(data => (data["V.I.I 1.1 - Primeira Leitura"])).toString()));
                     workbook.sheet(0).cell('AU24').value(parseFloat(selectedCert.map(data => (data["V.I.I 1.2 - Primeira Leitura"])).toString()));
@@ -308,9 +300,127 @@ export class CertificadosComponent implements OnInit {
                     workbook.sheet(0).cell('AV46').value((selectedCert.map(data => data["Data de Calibração"])).toString());
                     workbook.sheet(0).cell('AV47').value((selectedCert.map(data => data["Próxima Data de Calibração"])).toString());
                     workbook.sheet(0).cell('AV48').value("Brenno Fagundes");
+                    break; */
+                  
+                    case 'Medidor de Pressão - 10 Leituras':
+                    console.log(selectedCert);
+                    workbook.sheet(0).cell('AV3').value((selectedCert.map(data => data.Ano)).toString());
+                    workbook.sheet(0).cell('AW3').value((selectedCert.map(data => data.Mês)).toString());
+                    workbook.sheet(0).cell('AX3').value((selectedCert.map(data => data.PrecisoID)).toString());
+                    workbook.sheet(0).cell('AV4').value((selectedCert.map(data => data.Incremental)).toString());
+
+                    workbook.sheet(0).cell('AV5').value((selectedCert.map(data => data.Empresa)).toString());
+                    workbook.sheet(0).cell('AV6').value((selectedCert.map(data => data.Endereço)).toString());
+                    workbook.sheet(0).cell('AV7').value((selectedCert.map(data => data["Cidade c/ Estado"])).toString());
+                    workbook.sheet(0).cell('AV8').value((selectedCert.map(data => data.Instrumento)).toString());
+                    workbook.sheet(0).cell('AV9').value((selectedCert.map(data => data.Classe)).toString());
+                    workbook.sheet(0).cell('AV10').value((selectedCert.map(data => data.Equipamento)).toString());
+
+                    workbook.sheet(0).cell('AV11').value((selectedCert.map(data => data["Marca do Instrumento"])).toString());
+                    workbook.sheet(0).cell('AV12').value((selectedCert.map(data => data["Modelo do Instrumento"])).toString());
+                    workbook.sheet(0).cell('AV13').value((selectedCert.map(data => data["Classe do Instrumento"])).toString());
+                    workbook.sheet(0).cell('AV14').value((selectedCert.map(data => data["Número de Série do Instrumento"])).toString());
+                    workbook.sheet(0).cell('AV15').value((selectedCert.map(data => data["Identificação do Instrumento"])).toString());
+
+                    workbook.sheet(0).cell('AV16').value(parseFloat(selectedCert.map(data => (data["Inicio de Escala"])).toString()));
+                    workbook.sheet(0).cell('AX16').value(parseFloat(selectedCert.map(data => (data["Final de Escala"])).toString()));
+
+                    workbook.sheet(0).cell('AV17').value(parseFloat(selectedCert.map(data => (data["Inicio da Faixa de Uso"])).toString()));
+                    workbook.sheet(0).cell('AX17').value(parseFloat(selectedCert.map(data => (data["Final da Faixa de Uso"])).toString()));
+                    workbook.sheet(0).cell('AY16').value((selectedCert.map(data => data.Grandeza)).toString());
+                    workbook.sheet(0).cell('AV18').value(parseFloat(selectedCert.map(data => (data["Valor de uma Divisão"])).toString()));
+
+                    workbook.sheet(0).cell('AT22').value(parseFloat(selectedCert.map(data => (data["V.I.I 1 - Leitura 1"])).toString()));
+                    workbook.sheet(0).cell('AT23').value(parseFloat(selectedCert.map(data => (data["V.I.I 2 - Leitura 1"])).toString()));
+                    workbook.sheet(0).cell('AT24').value(parseFloat(selectedCert.map(data => (data["V.I.I 3 - Leitura 1"])).toString()));
+                    workbook.sheet(0).cell('AT25').value(parseFloat(selectedCert.map(data => (data["V.I.I 4 - Leitura 1"])).toString()));
+                    workbook.sheet(0).cell('AT26').value(parseFloat(selectedCert.map(data => (data["V.I.I 5 - Leitura 1"])).toString()));
+                    workbook.sheet(0).cell('AT27').value(parseFloat(selectedCert.map(data => (data["V.I.I 6 - Leitura 1"])).toString()));
+                    workbook.sheet(0).cell('AT28').value(parseFloat(selectedCert.map(data => (data["V.I.I 7 - Leitura 1"])).toString()));
+                    workbook.sheet(0).cell('AT29').value(parseFloat(selectedCert.map(data => (data["V.I.I 8 - Leitura 1"])).toString()));
+                    workbook.sheet(0).cell('AT30').value(parseFloat(selectedCert.map(data => (data["V.I.I 9 - Leitura 1"])).toString()));
+                    workbook.sheet(0).cell('AT31').value(parseFloat(selectedCert.map(data => (data["V.I.I 10 - Leitura 1"])).toString()));
+
+                    workbook.sheet(0).cell('AU22').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Leitura 1 - Linha 1"])).toString()));
+                    workbook.sheet(0).cell('AU23').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Leitura 1 - Linha 2"])).toString()));
+                    workbook.sheet(0).cell('AU24').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Leitura 1 - Linha 3"])).toString()));
+                    workbook.sheet(0).cell('AU25').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Leitura 1 - Linha 4"])).toString()));
+                    workbook.sheet(0).cell('AU26').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Leitura 1 - Linha 5"])).toString()));
+                    workbook.sheet(0).cell('AU27').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Leitura 1 - Linha 6"])).toString()));
+                    workbook.sheet(0).cell('AU28').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Leitura 1 - Linha 7"])).toString()));
+                    workbook.sheet(0).cell('AU29').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Leitura 1 - Linha 8"])).toString()));
+                    workbook.sheet(0).cell('AU30').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Leitura 1 - Linha 9"])).toString()));
+                    workbook.sheet(0).cell('AU31').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Leitura 1 - Linha 10"])).toString()));
+
+                    workbook.sheet(0).cell('AV22').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Leitura 1 - Linha 1"])).toString()));
+                    workbook.sheet(0).cell('AV23').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Leitura 1 - Linha 2"])).toString()));
+                    workbook.sheet(0).cell('AV24').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Leitura 1 - Linha 3"])).toString()));
+                    workbook.sheet(0).cell('AV25').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Leitura 1 - Linha 4"])).toString()));
+                    workbook.sheet(0).cell('AV26').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Leitura 1 - Linha 5"])).toString()));
+                    workbook.sheet(0).cell('AV27').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Leitura 1 - Linha 6"])).toString()));
+                    workbook.sheet(0).cell('AV28').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Leitura 1 - Linha 7"])).toString()));
+                    workbook.sheet(0).cell('AV29').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Leitura 1 - Linha 8"])).toString()));
+                    workbook.sheet(0).cell('AV30').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Leitura 1 - Linha 9"])).toString()));
+                    workbook.sheet(0).cell('AV31').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Leitura 1 - Linha 10"])).toString()));
+
+                    workbook.sheet(0).cell('AW22').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Leitura 1 - Linha 1"])).toString()));
+                    workbook.sheet(0).cell('AW23').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Leitura 1 - Linha 2"])).toString()));
+                    workbook.sheet(0).cell('AW24').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Leitura 1 - Linha 3"])).toString()));
+                    workbook.sheet(0).cell('AW25').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Leitura 1 - Linha 4"])).toString()));
+                    workbook.sheet(0).cell('AW26').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Leitura 1 - Linha 5"])).toString()));
+                    workbook.sheet(0).cell('AW27').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Leitura 1 - Linha 6"])).toString()));
+                    workbook.sheet(0).cell('AW28').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Leitura 1 - Linha 7"])).toString()));
+                    workbook.sheet(0).cell('AW29').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Leitura 1 - Linha 8"])).toString()));
+                    workbook.sheet(0).cell('AW30').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Leitura 1 - Linha 9"])).toString()));
+                    workbook.sheet(0).cell('AW31').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Leitura 1 - Linha 10"])).toString()));
+
+                    workbook.sheet(0).cell('AU36').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Leitura 2 - Linha 1"])).toString()));
+                    workbook.sheet(0).cell('AU37').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Leitura 2 - Linha 2"])).toString()));
+                    workbook.sheet(0).cell('AU38').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Leitura 2 - Linha 3"])).toString()));
+                    workbook.sheet(0).cell('AU39').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Leitura 2 - Linha 4"])).toString()));
+                    workbook.sheet(0).cell('AU40').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Leitura 2 - Linha 5"])).toString()));
+                    workbook.sheet(0).cell('AU41').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Leitura 2 - Linha 6"])).toString()));
+                    workbook.sheet(0).cell('AU42').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Leitura 2 - Linha 7"])).toString()));
+                    workbook.sheet(0).cell('AU43').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Leitura 2 - Linha 8"])).toString()));
+                    workbook.sheet(0).cell('AU44').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Leitura 2 - Linha 9"])).toString()));
+                    workbook.sheet(0).cell('AU45').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Leitura 2 - Linha 10"])).toString()));
+
+                    workbook.sheet(0).cell('AV36').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Leitura 2 - Linha 1"])).toString()));
+                    workbook.sheet(0).cell('AV37').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Leitura 2 - Linha 2"])).toString()));
+                    workbook.sheet(0).cell('AV38').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Leitura 2 - Linha 3"])).toString()));
+                    workbook.sheet(0).cell('AV39').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Leitura 2 - Linha 4"])).toString()));
+                    workbook.sheet(0).cell('AV40').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Leitura 2 - Linha 5"])).toString()));
+                    workbook.sheet(0).cell('AV41').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Leitura 2 - Linha 6"])).toString()));
+                    workbook.sheet(0).cell('AV42').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Leitura 2 - Linha 7"])).toString()));
+                    workbook.sheet(0).cell('AV43').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Leitura 2 - Linha 8"])).toString()));
+                    workbook.sheet(0).cell('AV44').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Leitura 2 - Linha 9"])).toString()));
+                    workbook.sheet(0).cell('AV45').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Leitura 2 - Linha 10"])).toString()));
+
+                    workbook.sheet(0).cell('AW36').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Leitura 2 - Linha 1"])).toString()));
+                    workbook.sheet(0).cell('AW37').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Leitura 2 - Linha 2"])).toString()));
+                    workbook.sheet(0).cell('AW38').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Leitura 2 - Linha 3"])).toString()));
+                    workbook.sheet(0).cell('AW39').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Leitura 2 - Linha 4"])).toString()));
+                    workbook.sheet(0).cell('AW40').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Leitura 2 - Linha 5"])).toString()));
+                    workbook.sheet(0).cell('AW41').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Leitura 2 - Linha 6"])).toString()));
+                    workbook.sheet(0).cell('AW42').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Leitura 2 - Linha 7"])).toString()));
+                    workbook.sheet(0).cell('AW43').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Leitura 2 - Linha 8"])).toString()));
+                    workbook.sheet(0).cell('AW44').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Leitura 2 - Linha 9"])).toString()));
+                    workbook.sheet(0).cell('AW45').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Leitura 2 - Linha 10"])).toString()));
+                    
+                    workbook.sheet(0).cell('AV49').value((selectedCert.map(data => data["Local da Calibração"])).toString());
+                    workbook.sheet(0).cell('AV50').value(parseFloat(selectedCert.map(data => (data["Temperatura do Local da Calibração"])).toString()));
+                    workbook.sheet(0).cell('AV51').value(parseFloat(selectedCert.map(data => (data["Umidade Relativa do Local da Calibração"])).toString()));
+
+                    workbook.sheet(0).cell('AT54').value((selectedCert.map(data => data["Padrão 1"])).toString());
+                    workbook.sheet(0).cell('AT55').value((selectedCert.map(data => data["Padrão 2"])).toString());
+                    workbook.sheet(0).cell('AT56').value((selectedCert.map(data => data["Padrão 3"])).toString());
+
+                    workbook.sheet(0).cell('AV60').value((selectedCert.map(data => data["Data de Calibração"])).toString());
+                    workbook.sheet(0).cell('AV61').value((selectedCert.map(data => data["Próxima Data de Calibração"])).toString());
+                    workbook.sheet(0).cell('AV62').value("Brenno Fagundes");
                     break;
 
-                  case "Termohigrometro":
+                  /* case "Termohigrometro":
                     workbook.sheet(0).cell('AW3').value((selectedCert.map(data => data.Ano)).toString());
                     workbook.sheet(0).cell('AX3').value((selectedCert.map(data => data.Mês)).toString());
                     workbook.sheet(0).cell('AY3').value((selectedCert.map(data => data.PrecisoID)).toString());
@@ -346,11 +456,11 @@ export class CertificadosComponent implements OnInit {
                     workbook.sheet(0).cell('AY22').value(parseFloat(selectedCert.map(data => (data["Umidade Relativa - Final da Faixa de Uso"])).toString()));
                     workbook.sheet(0).cell('AW23').value(parseFloat(selectedCert.map(data => (data["Umidade Relativa - Valor de uma Divisão"])).toString()));
 
-                    workbook.sheet(0).cell('AU33').value(parseFloat(selectedCert.map(data => (data["V.C.C 1 - Primeira Leitura"])).toString()));
-                    workbook.sheet(0).cell('AU34').value(parseFloat(selectedCert.map(data => (data["V.C.C 2 - Primeira Leitura"])).toString()));
-                    workbook.sheet(0).cell('AU35').value(parseFloat(selectedCert.map(data => (data["V.C.C 3 - Primeira Leitura"])).toString()));
-                    workbook.sheet(0).cell('AU36').value(parseFloat(selectedCert.map(data => (data["V.C.C 4 - Primeira Leitura"])).toString()));
-                    workbook.sheet(0).cell('AU37').value(parseFloat(selectedCert.map(data => (data["V.C.C 5 - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AU33').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AU34').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AU35').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AU36').value(parseFloat(selectedCert.map(data => (data["V.V.C 4 - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AU37').value(parseFloat(selectedCert.map(data => (data["V.V.C 5 - Primeira Leitura"])).toString()));
 
                     workbook.sheet(0).cell('AV33').value(parseFloat(selectedCert.map(data => (data["V.I.I 1.1 - Primeira Leitura"])).toString()));
                     workbook.sheet(0).cell('AV34').value(parseFloat(selectedCert.map(data => (data["V.I.I 1.2 - Primeira Leitura"])).toString()));
@@ -370,17 +480,17 @@ export class CertificadosComponent implements OnInit {
                     workbook.sheet(0).cell('AX36').value(parseFloat(selectedCert.map(data => (data["V.I.I 3.4 - Primeira Leitura"])).toString()));
                     workbook.sheet(0).cell('AX37').value(parseFloat(selectedCert.map(data => (data["V.I.I 3.5 - Primeira Leitura"])).toString()));
 
-                    workbook.sheet(0).cell('BA33').value(parseFloat(selectedCert.map(data => (data["V.C.C 1 - Incerteza - Primeira Leitura"])).toString()));
-                    workbook.sheet(0).cell('BA34').value(parseFloat(selectedCert.map(data => (data["V.C.C 2 - Incerteza - Primeira Leitura"])).toString()));
-                    workbook.sheet(0).cell('BA35').value(parseFloat(selectedCert.map(data => (data["V.C.C 3 - Incerteza - Primeira Leitura"])).toString()));
-                    workbook.sheet(0).cell('BA36').value(parseFloat(selectedCert.map(data => (data["V.C.C 4 - Incerteza - Primeira Leitura"])).toString()));
-                    workbook.sheet(0).cell('BA37').value(parseFloat(selectedCert.map(data => (data["V.C.C 5 - Incerteza - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('BA33').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Incerteza - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('BA34').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Incerteza - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('BA35').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Incerteza - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('BA36').value(parseFloat(selectedCert.map(data => (data["V.V.C 4 - Incerteza - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('BA37').value(parseFloat(selectedCert.map(data => (data["V.V.C 5 - Incerteza - Primeira Leitura"])).toString()));
 
-                    workbook.sheet(0).cell('AU43').value(parseFloat(selectedCert.map(data => (data["V.C.C 1 - Segunda Leitura"])).toString()));
-                    workbook.sheet(0).cell('AU44').value(parseFloat(selectedCert.map(data => (data["V.C.C 2 - Segunda Leitura"])).toString()));
-                    workbook.sheet(0).cell('AU45').value(parseFloat(selectedCert.map(data => (data["V.C.C 3 - Segunda Leitura"])).toString()));
-                    workbook.sheet(0).cell('AU46').value(parseFloat(selectedCert.map(data => (data["V.C.C 4 - Segunda Leitura"])).toString()));
-                    workbook.sheet(0).cell('AU47').value(parseFloat(selectedCert.map(data => (data["V.C.C 4 - Segunda Leitura"])).toString()));
+                    workbook.sheet(0).cell('AU43').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Segunda Leitura"])).toString()));
+                    workbook.sheet(0).cell('AU44').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Segunda Leitura"])).toString()));
+                    workbook.sheet(0).cell('AU45').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Segunda Leitura"])).toString()));
+                    workbook.sheet(0).cell('AU46').value(parseFloat(selectedCert.map(data => (data["V.V.C 4 - Segunda Leitura"])).toString()));
+                    workbook.sheet(0).cell('AU47').value(parseFloat(selectedCert.map(data => (data["V.V.C 4 - Segunda Leitura"])).toString()));
 
                     workbook.sheet(0).cell('AV43').value(parseFloat(selectedCert.map(data => (data["V.I.I 1.1 - Segunda Leitura"])).toString()));
                     workbook.sheet(0).cell('AV44').value(parseFloat(selectedCert.map(data => (data["V.I.I 1.2 - Segunda Leitura"])).toString()));
@@ -400,17 +510,17 @@ export class CertificadosComponent implements OnInit {
                     workbook.sheet(0).cell('AX46').value(parseFloat(selectedCert.map(data => (data["V.I.I 3.4 - Segunda Leitura"])).toString()));
                     workbook.sheet(0).cell('AX47').value(parseFloat(selectedCert.map(data => (data["V.I.I 3.5 - Segunda Leitura"])).toString()));
 
-                    workbook.sheet(0).cell('BA43').value(parseFloat(selectedCert.map(data => (data["V.C.C 1 - Incerteza - Segunda Leitura"])).toString()));
-                    workbook.sheet(0).cell('BA44').value(parseFloat(selectedCert.map(data => (data["V.C.C 2 - Incerteza - Segunda Leitura"])).toString()));
-                    workbook.sheet(0).cell('BA45').value(parseFloat(selectedCert.map(data => (data["V.C.C 3 - Incerteza - Segunda Leitura"])).toString()));
-                    workbook.sheet(0).cell('BA46').value(parseFloat(selectedCert.map(data => (data["V.C.C 4 - Incerteza - Segunda Leitura"])).toString()));
-                    workbook.sheet(0).cell('BA47').value(parseFloat(selectedCert.map(data => (data["V.C.C 5 - Incerteza - Segunda Leitura"])).toString()));
+                    workbook.sheet(0).cell('BA43').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Incerteza - Segunda Leitura"])).toString()));
+                    workbook.sheet(0).cell('BA44').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Incerteza - Segunda Leitura"])).toString()));
+                    workbook.sheet(0).cell('BA45').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Incerteza - Segunda Leitura"])).toString()));
+                    workbook.sheet(0).cell('BA46').value(parseFloat(selectedCert.map(data => (data["V.V.C 4 - Incerteza - Segunda Leitura"])).toString()));
+                    workbook.sheet(0).cell('BA47').value(parseFloat(selectedCert.map(data => (data["V.V.C 5 - Incerteza - Segunda Leitura"])).toString()));
 
-                    workbook.sheet(0).cell('AU53').value(parseFloat(selectedCert.map(data => (data["V.C.C 1 - Terceira Leitura"])).toString()));
-                    workbook.sheet(0).cell('AU54').value(parseFloat(selectedCert.map(data => (data["V.C.C 2 - Terceira Leitura"])).toString()));
-                    workbook.sheet(0).cell('AU55').value(parseFloat(selectedCert.map(data => (data["V.C.C 3 - Terceira Leitura"])).toString()));
-                    workbook.sheet(0).cell('AU56').value(parseFloat(selectedCert.map(data => (data["V.C.C 4 - Terceira Leitura"])).toString()));
-                    workbook.sheet(0).cell('AU57').value(parseFloat(selectedCert.map(data => (data["V.C.C 5 - Terceira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AU53').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Terceira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AU54').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Terceira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AU55').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Terceira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AU56').value(parseFloat(selectedCert.map(data => (data["V.V.C 4 - Terceira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AU57').value(parseFloat(selectedCert.map(data => (data["V.V.C 5 - Terceira Leitura"])).toString()));
 
                     workbook.sheet(0).cell('AV53').value(parseFloat(selectedCert.map(data => (data["V.I.I 1.1 - Terceira Leitura"])).toString()));
                     workbook.sheet(0).cell('AV54').value(parseFloat(selectedCert.map(data => (data["V.I.I 1.2 - Terceira Leitura"])).toString()));
@@ -430,11 +540,11 @@ export class CertificadosComponent implements OnInit {
                     workbook.sheet(0).cell('AX56').value(parseFloat(selectedCert.map(data => (data["V.I.I 3.4 - Terceira Leitura"])).toString()));
                     workbook.sheet(0).cell('AX57').value(parseFloat(selectedCert.map(data => (data["V.I.I 3.5 - Terceira Leitura"])).toString()));
 
-                    workbook.sheet(0).cell('BA53').value(parseFloat(selectedCert.map(data => (data["V.C.C 1 - Incerteza - Terceira Leitura"])).toString()));
-                    workbook.sheet(0).cell('BA54').value(parseFloat(selectedCert.map(data => (data["V.C.C 2 - Incerteza - Terceira Leitura"])).toString()));
-                    workbook.sheet(0).cell('BA55').value(parseFloat(selectedCert.map(data => (data["V.C.C 3 - Incerteza - Terceira Leitura"])).toString()));
-                    workbook.sheet(0).cell('BA56').value(parseFloat(selectedCert.map(data => (data["V.C.C 4 - Incerteza - Terceira Leitura"])).toString()));
-                    workbook.sheet(0).cell('BA57').value(parseFloat(selectedCert.map(data => (data["V.C.C 5 - Incerteza - Terceira Leitura"])).toString()));
+                    workbook.sheet(0).cell('BA53').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Incerteza - Terceira Leitura"])).toString()));
+                    workbook.sheet(0).cell('BA54').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Incerteza - Terceira Leitura"])).toString()));
+                    workbook.sheet(0).cell('BA55').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Incerteza - Terceira Leitura"])).toString()));
+                    workbook.sheet(0).cell('BA56').value(parseFloat(selectedCert.map(data => (data["V.V.C 4 - Incerteza - Terceira Leitura"])).toString()));
+                    workbook.sheet(0).cell('BA57').value(parseFloat(selectedCert.map(data => (data["V.V.C 5 - Incerteza - Terceira Leitura"])).toString()));
 
                     workbook.sheet(0).cell('AW60').value((selectedCert.map(data => data["Local da Calibração"])).toString());
                     workbook.sheet(0).cell('AW61').value(parseFloat(selectedCert.map(data => (data["Temperatura do Local da Calibração"])).toString()));
@@ -472,11 +582,11 @@ export class CertificadosComponent implements OnInit {
                     workbook.sheet(0).cell('AX14').value((selectedCert.map(data => data.Grandeza)).toString());
                     workbook.sheet(0).cell('AV16').value(parseFloat(selectedCert.map(data => (data["Valor de uma Divisão"])).toString()));
                     // Missing Escala:start:end. 
-                    workbook.sheet(0).cell('AT21').value(parseFloat(selectedCert.map(data => (data["V.C.C 1 - Primeira Leitura"])).toString()));
-                    workbook.sheet(0).cell('AT22').value(parseFloat(selectedCert.map(data => (data["V.C.C 2 - Primeira Leitura"])).toString()));
-                    workbook.sheet(0).cell('AT23').value(parseFloat(selectedCert.map(data => (data["V.C.C 3 - Primeira Leitura"])).toString()));
-                    workbook.sheet(0).cell('AT24').value(parseFloat(selectedCert.map(data => (data["V.C.C 4 - Primeira Leitura"])).toString()));
-                    workbook.sheet(0).cell('AT25').value(parseFloat(selectedCert.map(data => (data["V.C.C 5 - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AT21').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AT22').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AT23').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AT24').value(parseFloat(selectedCert.map(data => (data["V.V.C 4 - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AT25').value(parseFloat(selectedCert.map(data => (data["V.V.C 5 - Primeira Leitura"])).toString()));
 
                     workbook.sheet(0).cell('AU21').value(parseFloat(selectedCert.map(data => (data["V.I.I 1.1 - Primeira Leitura"])).toString()));
                     workbook.sheet(0).cell('AU22').value(parseFloat(selectedCert.map(data => (data["V.I.I 1.2 - Primeira Leitura"])).toString()));
@@ -496,11 +606,11 @@ export class CertificadosComponent implements OnInit {
                     workbook.sheet(0).cell('AW24').value(parseFloat(selectedCert.map(data => (data["V.I.I 3.4 - Primeira Leitura"])).toString()));
                     workbook.sheet(0).cell('AW25').value(parseFloat(selectedCert.map(data => (data["V.I.I 3.5 - Primeira Leitura"])).toString()));
 
-                    workbook.sheet(0).cell('AZ21').value(parseFloat(selectedCert.map(data => (data["V.C.C 1 - Incerteza - Primeira Leitura"])).toString()));
-                    workbook.sheet(0).cell('AZ22').value(parseFloat(selectedCert.map(data => (data["V.C.C 2 - Incerteza - Primeira Leitura"])).toString()));
-                    workbook.sheet(0).cell('AZ23').value(parseFloat(selectedCert.map(data => (data["V.C.C 3 - Incerteza - Primeira Leitura"])).toString()));
-                    workbook.sheet(0).cell('AZ24').value(parseFloat(selectedCert.map(data => (data["V.C.C 4 - Incerteza - Primeira Leitura"])).toString()));
-                    workbook.sheet(0).cell('AZ25').value(parseFloat(selectedCert.map(data => (data["V.C.C 5 - Incerteza - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AZ21').value(parseFloat(selectedCert.map(data => (data["V.V.C 1 - Incerteza - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AZ22').value(parseFloat(selectedCert.map(data => (data["V.V.C 2 - Incerteza - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AZ23').value(parseFloat(selectedCert.map(data => (data["V.V.C 3 - Incerteza - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AZ24').value(parseFloat(selectedCert.map(data => (data["V.V.C 4 - Incerteza - Primeira Leitura"])).toString()));
+                    workbook.sheet(0).cell('AZ25').value(parseFloat(selectedCert.map(data => (data["V.V.C 5 - Incerteza - Primeira Leitura"])).toString()));
 
                     workbook.sheet(0).cell('AV28').value((selectedCert.map(data => (data["Local da Calibração"])).toString()));
                     workbook.sheet(0).cell('AV29').value(parseFloat(selectedCert.map(data => (data["Temperatura do Local da Calibração"])).toString()));
@@ -514,7 +624,7 @@ export class CertificadosComponent implements OnInit {
                     workbook.sheet(0).cell('AV37').value((selectedCert.map(data => data["Data de Calibração"])).toString());
                     workbook.sheet(0).cell('AV38').value((selectedCert.map(data => data["Próxima Data de Calibração"])).toString());
                     workbook.sheet(0).cell('AV39').value("Brenno Fagundes");
-                    break;
+                    break; */
                 }
             }
 
